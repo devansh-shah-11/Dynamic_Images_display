@@ -14,6 +14,7 @@ function Counter() {
       <span>{counter}</span>
       {'\t'}
       <button onClick={SubtractCounter}>-</button>
+      <br />
     </div>
   )
 }
