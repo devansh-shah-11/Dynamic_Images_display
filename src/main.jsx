@@ -5,7 +5,7 @@ import App from './App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div>
-    <Counter />
+    {/* <Counter /> */}
     <App />
   </div>
 )
