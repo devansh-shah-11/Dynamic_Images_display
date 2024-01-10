@@ -18,7 +18,7 @@ function App() {
         <div>
             <h1>Dogs</h1>
             {data && data.message.map((url, index) => (
-                <img key={index} src={url} alt="dog" />
+                <img key={index} src={url} alt={`Dog ${index + 1}`}  />
             ))}
         </div>
     );
