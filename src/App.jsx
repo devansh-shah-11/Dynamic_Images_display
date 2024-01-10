@@ -10,9 +10,11 @@ function App() {
         .catch(error => console.error(error));
     }, []);
 
+    console.log(data);
+    
     return (
         <div>
-        {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
+            <img src={data && data.message} alt="dog" />
         </div>
     );
 }
