@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
+
 function App() {
     const [data, setData] = useState(null);
-
+    let digit = 5;
+    let url = `https://dog.ceo/api/breeds/image/random/${digit}`;
     useEffect(() => {
-        fetch('https://dog.ceo/api/breeds/image/random/2')
+        fetch(url)
         .then(response => response.json())
         .then(json => setData(json))
         .catch(error => console.error(error));
